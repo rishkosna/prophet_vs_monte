@@ -12,7 +12,7 @@ pip install (package)
 
 ## Motivation and Beginnings
 
-[Kalshi](https://kalshi.com/) is the fisrt ever CFTC-regulated exchange that allows investors to trade on event contracts, a class of assets that allows investors to invest and trade directly on the outcome of events. In their words, this system is the next evolution of regulated commodities, and expands the world of futures and markets, allowing people to trade on events they are fluent or interested in, without much of the traditional noise of investing.
+[Kalshi](https://kalshi.com/) is the first ever CFTC-regulated exchange that allows investors to trade on event contracts, a class of assets that allows investors to invest and trade directly on the outcome of events. In their words, this system is the next evolution of regulated commodities, and expands the world of futures and markets, allowing people to trade on events they are fluent or interested in, without much of the traditional noise of investing.
 
 As with any young market, the possibilities for arbitrage and alpha are endless, and Kalshi's markets, with such rapid turnover, especially within their daily and weekly markets, have the potential to allow for many strategies.
 
