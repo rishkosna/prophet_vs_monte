@@ -41,7 +41,15 @@ Finally, to Kalshi!
 
 - An example weekly S&P market on Kalshi ![weekly kalshi market](./images/kalshi_market.png)
 
-Within this repo there is a basic client and tester for said client that allows users to gauge active markets, or any specific market, and implementation for submitting trades is rather simple. Now, for 2022 YTD as of early September, trading weekly, the Prophet Model correctly predicts the range of closing prices by upward of 75%, however its true singalling function comes through a similar form to a different quantitative trading strategy: mean reversion. Applying the concepts of mean reversion to the forcasts by the Prophet model garners profit on 60% of weeks, and profit overall. Note, for both this model and the next, hedging was used within reason given by the ranges of results gathered from the simulation. When it comes to Monte-Carlo, the results, in accordance with the method, are simply random. The Monte model garnered immense double-digit gains some weeks, but fell flat on other weeks, losing just as much, and more. In the end, the Monte Model was pretty close to beaking even (+- 7%, though this variability is a nightmare in the world of investing), however was outperformed significantly by the Prophet model. 
+Within this repo there is a basic client and tester for said client that allows users to gauge active markets, or any specific market, and implementation for submitting trades is rather simple. 
+
+#### Overview of Results
+- 2022 YTD as of early September, trading weekly, the Prophet Model correctly predicts the range of closing prices by upward of 75%.
+- The Monte model garnered immense double-digit gains some weeks, but lost just as much, and more, other weeks. 
+- Prophet model ended in profit.
+- In the end, the Monte Model was pretty close to beaking even (+- 7%).
+
+However, the Prophet model's true singaling function comes through a similar form to a different quantitative trading strategy: mean reversion. Applying the concepts of mean reversion to the forcasts by the Prophet model garners profit on 60% of weeks, and profit overall (This method also involves hedging).
 
 At the end of the day, simply relying on the machine is likely not the best way to trade with the Prophet model; a trader's intuition can add much to this model, and a researcher's, well, research, can add just as much.
 
