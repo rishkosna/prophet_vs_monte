@@ -1,6 +1,6 @@
 # Prophet ML Modeling vs. Monte-Carlo Simulation
 
-Comparing traditional finance modeling methods (Monte Carlo via Euler Discretization) with more novel techniques — that being modeling via machine learning — to determine a more viable trading strategy for event contract trading on Kalshi.
+Comparing traditional finance modeling methods (Monte Carlo via Euler Discretization) with more novel techniques — that being modeling via machine learning — to determine a more viable trading strategy for event contract trading on Kalshi. None of this is financial advice LOL.
 
 ## Getting Started
 
@@ -26,9 +26,23 @@ Obviously, using `m.fit(df)` is just not enough for a proper model, though we wi
 
 Notable changes include, adding regressors, assessing changepoints created by the model, and, of course hyperparameter tuning of many variables; specific code and processes are in the file.
 
+- Example of examining model changepoints ![changepoint analyis](./images/changepoint_analysis.png)
+
 ## Final Models
 
+With our optimization done, we can view our final models! They're found in the `final_models.ipynb` file. Note that these models simulate a years forecast, however we will only be looking at a few weeks into the future at most, and optimization was done with that in mind. Take a look at them below.
 
+- Final Monte-Carlo Model (only 10 of many simulations) ![final monte model](./images/final_monte.png)
+- Final Prophet Model ![final prophet model](./images/final_prophet.png)
 
 ## Kalshi Results
 
+Finally, to Kalshi! 
+
+- An example weekly S&P market on Kalshi ![weekly kalshi market](./images/kalshi_market.png)
+
+Within this repo there is a basic client and tester for said client that allows users to gauge active markets, or any specific market, and implementation for submitting trades is rather simple. Now, for 2022 YTD as of early September, trading weekly, the Prophet Model correctly predicts the range of closing prices by upward of 75%, however its true singalling function comes through a similar form to a different quantitative trading strategy: mean reversion. Applying the concepts of mean reversion to the forcasts by the Prophet model garners profit on 60% of weeks, and profit overall. Note, for both this model and the next, hedging was used within reason given by the ranges of results gathered from the simulation. When it comes to Monte-Carlo, the results, in accordance with the method, are simply random. The Monte model garnered immense double-digit gains some weeks, but fell flat on other weeks, losing just as much, and more. In the end, the Monte Model was pretty close to beaking even (+- 7%, though this variability is a nightmare in the world of investing), however was outperformed significantly by the Prophet model. 
+
+At the end of the day, simply relying on the machine is likely not the best way to trade with the Prophet model; a trader's intuition can add much to this model, and a researcher's, well, research, can add just as much.
+
+Future improvements to this project may include, a system that generates signals at key points that lead a trader to mean reversion trades, automatic trade execution via the Kalshi client provided, and, of course, improving model accuracy with more regressors, tuning, or perhaps turning to an entirely new platform for modeling.
