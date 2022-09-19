@@ -47,7 +47,7 @@ Within this repo there is a basic client and tester for said client that allows 
 - 2022 YTD as of early September, trading weekly, the Prophet Model correctly predicts the range of closing prices by upward of 75%.
 - The Monte model garnered immense double-digit gains some weeks, but lost just as much, and more, other weeks. 
 - Prophet model ended in profit.
-- In the end, the Monte Model was pretty close to beaking even (+- 7%).
+- In the end, the Monte Model was pretty close to beaking even (+- 3%).
 
 However, the Prophet model's true singaling function comes through a similar form to a different quantitative trading strategy: mean reversion. Applying the concepts of mean reversion to the forcasts by the Prophet model garners profit on 60% of weeks, and profit overall (This method also involves hedging).
 
