@@ -12,13 +12,15 @@ pip install (package)
 
 ## Motivation and Beginnings
 
-[Kalshi](https://kalshi.com/) is the first ever CFTC-regulated exchange that allows investors to trade on event contracts, a class of assets that allows investors to invest and trade directly on the outcome of events. In their words, this system is the next evolution of regulated commodities, and expands the world of futures and markets, allowing people to trade on events they are fluent or interested in, without much of the traditional noise of investing.
+[Kalshi](https://kalshi.com/) is the first ever CFTC-regulated exchange that allows investors to trade on event contracts, a class of assets that allows investors to invest and trade directly on the outcome of events.
 
 As with any young market, the possibilities for arbitrage and alpha are endless, and Kalshi's markets, with such rapid turnover, especially within their daily and weekly markets, have the potential to allow for many strategies.
 
-Now to the project itself; the key goal was to compare possible strategies for use on Kalshi's S&P 500 market and garner results about their effectiveness. One pick for this model comparison is Monte-Carlo Simulation, particularly via Euler Discretization, to predict stock pricing. The question became, was Monte-Carlo legitimately viable, or does it face severe pitfalls in accuracy. Next, pitting it against a novel method, machine learning, here with the Prophet API, with possible shortcomigns such as over/under fitting the data.
+Now to the project itself; the key goal was to compare possible strategies for use on Kalshi's S&P 500 market and garner results about their effectiveness. One pick for this model comparison is Monte-Carlo Simulation, particularly via Euler Discretization. The question became, was Monte-Carlo legitimately viable, or does it face severe pitfalls in accuracy. Next was pitting it against a novel method, machine learning, here with the Prophet API, with possible shortcomings such as over/under fitting the data.
 
 Initially, base models for the S&P 500 data were formed in `prophet_predictor.ipynb`. Further details and descriptions of very basic Prophet model creation, and also Euler Discretization, are in the file.
+
+NOTE: plotly models don't properly display on GitHub, so please refer to the final model pictures below, or feel free to run the code yourself!
 
 ## Hyperparameter Tuning and Further Optimization
 
